@@ -3,9 +3,9 @@ import React from 'react';
  export default function Buttons(){
      // + btn
     function addMoreTime() {
+        console.log(`You've added a minute to the timer`);
         const [count, setCount] = useState(0);
-        //setCount(count + 1 );
-        console.log(setCount(count + 1));
+        setCount(count + 1);
     };
 
     // - btn

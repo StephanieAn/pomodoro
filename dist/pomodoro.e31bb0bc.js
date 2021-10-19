@@ -29609,6 +29609,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 // timer 
 function Timer() {
+  // const [hours, setHours] = useState(0);
   var _useState = (0, _react.useState)(25),
       _useState2 = _slicedToArray(_useState, 2),
       minutes = _useState2[0],
@@ -29617,7 +29618,8 @@ function Timer() {
   var _useState3 = (0, _react.useState)(0),
       _useState4 = _slicedToArray(_useState3, 2),
       seconds = _useState4[0],
-      setSeconds = _useState4[1];
+      setSeconds = _useState4[1]; // const timerHours = hours < 10 ? `0${hours}` : hours;
+
 
   var timerMinutes = minutes < 10 ? "0".concat(minutes) : minutes;
   var timerSeconds = seconds < 10 ? "0".concat(seconds) : seconds;
@@ -29670,13 +29672,14 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Buttons() {
   // + btn
   function addMoreTime() {
+    console.log("You've added a minute to the timer");
+
     var _useState = useState(0),
         _useState2 = _slicedToArray(_useState, 2),
         count = _useState2[0],
-        setCount = _useState2[1]; //setCount(count + 1 );
+        setCount = _useState2[1];
 
-
-    console.log(setCount(count + 1));
+    setCount(count + 1);
   }
 
   ; // - btn

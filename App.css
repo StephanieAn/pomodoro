@@ -10,8 +10,8 @@ body{
 .timer__value p{
     height: 50px;
     width: fit-content;
-    border: dodgerblue 1px solid;
-    border-radius: 100px;
+    /* border: dodgerblue 1px solid;
+    border-radius: 100px; */
     font-size: 3rem;
     color: #1e90ff;
     vertical-align: middle 
