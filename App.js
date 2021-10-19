@@ -1,12 +1,16 @@
-import React from "react";
+import React,{ ReactDOM } from "react";
+import Header from "./React-js/header";
+import Timer from "./React-js/timer";
+import Buttons from "./React-js/buttons";
+import "./App.css";
 
 function App() {
     return (
-        <div className={"Compteur"}>
-            <div>
-                <p>{`00:00:00`}</p>
-            </div>
-        </div>
+        <>
+            <Header />
+            <Timer />
+            <Buttons />
+        </>
     );
 }
 export default App;
