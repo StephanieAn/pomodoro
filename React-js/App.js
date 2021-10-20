@@ -1,8 +1,8 @@
 import React,{ ReactDOM } from "react";
-import Header from "./React-js/header";
-import Timer from "./React-js/timer";
-import Buttons from "./React-js/buttons";
-import "./App.css";
+import Header from "./header";
+import Timer from "./timer";
+import Buttons from "./buttons";
+import "../App.css";
 
 function App() {
     return (
