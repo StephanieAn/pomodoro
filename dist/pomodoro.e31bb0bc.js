@@ -29669,38 +29669,34 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+// + btn
+var addMoreTime = function addMoreTime() {
+  console.log("You've added a minute to the timer");
+
+  var _useState = useState(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      count = _useState2[0],
+      setCount = _useState2[1];
+
+  setCount(count + 1);
+}; // - btn
+
+
+var takeSomeTime = function takeSomeTime() {
+  console.log("You've clicked on the - button");
+}; // start btn
+
+
+var startTimer = function startTimer() {
+  console.log("You've clicked on the start button");
+}; // reset btn
+
+
+var resetTimer = function resetTimer() {
+  console.log("You've clicked on the reset button");
+};
+
 function Buttons() {
-  // + btn
-  function addMoreTime() {
-    console.log("You've added a minute to the timer");
-
-    var _useState = useState(0),
-        _useState2 = _slicedToArray(_useState, 2),
-        count = _useState2[0],
-        setCount = _useState2[1];
-
-    setCount(count + 1);
-  }
-
-  ; // - btn
-
-  function takeSomeTime() {
-    console.log("You've clicked on the - button");
-  }
-
-  ; // start btn
-
-  function startTimer() {
-    console.log("You've clicked on the start button");
-  }
-
-  ; // reset btn
-
-  function resetTimer() {
-    console.log("You've clicked on the reset button");
-  }
-
-  ;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "timer__buttons"
   }, /*#__PURE__*/_react.default.createElement("button", {
@@ -29869,7 +29865,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41905" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38139" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
